@@ -1,5 +1,12 @@
-<div>
-    <div *ngFor="let item of navbarItems">
-        <div>{{item}}</div>
-    </div>
+<div class="navbar-container">
+	<!-- product logo goes here -->
+	<div>Logo</div>
+	<div class="navbar-container__tab-group">
+		<ng-container *ngFor="let item of navbarItems">
+			<div class="navbar-container__tab-item">{{ item }}</div>
+		</ng-container>
+	</div>
+	<div>
+		<button>Login / SignUp</button>
+	</div>
 </div>
