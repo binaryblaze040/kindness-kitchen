@@ -1,0 +1,15 @@
+.navbar-container {
+	display: flex;
+	justify-content: space-between;
+	padding: 24px;
+	box-shadow: 0 2px 12px 0 #00000026;
+
+	.navbar-container__tab-group {
+		display: flex;
+		gap: 48px;
+
+		.navbar-container__tab-item {
+			margin: 0 24px;
+		}
+	}
+}
