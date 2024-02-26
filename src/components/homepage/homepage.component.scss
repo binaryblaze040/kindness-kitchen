@@ -1,0 +1,64 @@
+@import "../../variables/style/layout-variables.scss";
+
+.hero-banner {
+	&__container {
+        cursor: default;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		text-align: center;
+		margin: 60px $content-padding;
+	}
+
+	&__text {
+        padding-right: 10%;
+		text-align: left;
+
+		&-heading {
+            font-size: 40px;
+            font-weight: bold;
+            color: $text-orange;
+            font-family: $heading-font;
+        }
+
+        &-description {
+            margin-top: 40px;
+            font-size: 20px;
+            font-weight: normal;
+            font-family: $description-font;
+        }
+
+        &-buttons {
+            display: flex;
+            justify-content: flex-start;
+            margin: 60px 20px;
+            
+
+            &-donate {
+                display: flex;
+                align-items: center;
+                margin-right: 30px;
+                padding: 10px 20px;
+                font-weight: bold;
+                background: $donate-red;
+
+                &-icon {
+                    padding: 0 10px;
+                }
+            }
+
+            &-grab {
+                display: flex;
+                align-items: center;
+                margin-right: 30px;
+                padding: 10px 20px;
+                font-weight: bold;
+                background: $grab-blue;
+
+                &-icon {
+                    padding: 0 10px;
+                }
+            }
+        }
+	}
+}
