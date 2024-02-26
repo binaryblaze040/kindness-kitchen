@@ -1,0 +1,43 @@
+<form (ngSubmit)="submitForm()">
+	<div>
+		<label for="foodName">Food Name:</label>
+		<input
+			type="text"
+			id="foodName"
+			name="foodName"
+			[(ngModel)]="foodName"
+			required
+		/>
+	</div>
+	<div>
+		<label for="quantity">Quantity:</label>
+		<input
+			type="number"
+			id="quantity"
+			name="quantity"
+			[(ngModel)]="quantity"
+			required
+		/>
+	</div>
+	<div>
+		<label for="expiryDate">Expiry Date:</label>
+		<input
+			type="date"
+			id="expiryDate"
+			name="expiryDate"
+			[(ngModel)]="expiryDate"
+			required
+		/>
+	</div>
+	<div>
+		<label for="contact">Contact Information:</label>
+		<input
+			type="text"
+			id="contact"
+			name="contact"
+			[(ngModel)]="contact"
+			required
+		/>
+	</div>
+	<button type="submit">Donate Food</button>
+</form>
