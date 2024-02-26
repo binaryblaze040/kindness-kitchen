@@ -1,13 +1,35 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink, RouterOutlet, RouterLinkActive],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
-  navbarItems: string[] = ['Home', 'Donate', 'Receive', 'About', 'Contact Us'];
+
+  navbarItems: any[] = [
+    {
+      label: 'Home',
+      routeTo: '/home'
+    },
+    {
+      label: 'Donate',
+      routeTo: '/donate'
+    },
+    {
+      label: 'Receive',
+      routeTo: '/receive'
+    },
+    {
+      label: 'About',
+      routeTo: '/about'
+    },
+    {
+      label: 'Contact Us',
+      routeTo: '/contact'
+    }];
 }

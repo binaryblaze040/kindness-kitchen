@@ -1,15 +1,45 @@
+@import "../../variables/style/layout-variables.scss";
+
 .navbar-container {
 	display: flex;
 	justify-content: space-between;
-	padding: 24px;
-	box-shadow: 0 2px 12px 0 #00000026;
+	padding: 12px 24px;
 
-	.navbar-container__tab-group {
+	&__header-logo {
+		width: 48px;
+	}
+
+	&__tab-group {
 		display: flex;
-		gap: 48px;
+		align-items: center;
 
-		.navbar-container__tab-item {
+		&-item {
 			margin: 0 24px;
+
+			&:hover {
+				color: $text-orange;
+			}
+		}
+
+		&-join-us {
+			margin-left: 24px;
+			padding: 4px 12px;
+			border-radius: 20px;
+			background-color: $grab-blue;
+			font-weight: bold;
+		}
+
+		&-happy-coin {
+			display: flex;
+			align-items: center;
+
+			&-icon {
+				width: 40px;
+			}
+		}
+
+		.active-tab {
+			color: $text-orange;
 		}
 	}
 }
