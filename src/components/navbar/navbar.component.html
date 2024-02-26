@@ -1,12 +1,23 @@
 <div class="navbar-container">
 	<!-- product logo goes here -->
-	<div>Logo</div>
+
+	<img
+		class="navbar-container__header-logo"
+		src="../../assets/images/navbar/header-logo.png"
+		alt="product-logo"
+	/>
+
 	<div class="navbar-container__tab-group">
 		<ng-container *ngFor="let item of navbarItems">
-			<div class="navbar-container__tab-item">{{ item }}</div>
+			<div class="navbar-container__tab-group-item" [routerLink]="[item.routeTo]" routerLinkActive="active-tab">{{ item.label }}</div>
 		</ng-container>
-	</div>
-	<div>
-		<button>Login / SignUp</button>
+		<div class="navbar-container__tab-group-happy-coin">
+			<img src="../../assets/images/navbar/happy-coin.png" alt="happy-coin-icon" class="navbar-container__tab-group-happy-coin-icon"/>
+			<label>1</label>
+		</div>
+		
+		<button type="button" class="navbar-container__tab-group-join-us btn" onclick=>
+			Join Us
+		</button>
 	</div>
 </div>
