@@ -1,20 +1,12 @@
-import { Routes } from '@angular/router';
-import { HomepageComponent } from '../components/homepage/homepage.component';
-import { ReceiveFoodComponent } from '../components/receive-food/receive-food.component';
-
+import { Routes } from "@angular/router";
+import {
+	HomepageComponent,
+	DonateFoodComponent,
+	ReceiveFoodComponent,
+} from "../components/component-index";
 
 export const routes: Routes = [
-    {
-        path: '',
-        redirectTo: '/home',
-        pathMatch: 'full'
-    },
-    {
-        path: 'home',
-        component: HomepageComponent,
-    },
-    {
-        path: 'receive',
-        component: ReceiveFoodComponent
-    }
+	{ path: "", component: HomepageComponent },
+	{ path: "donate-food", component: DonateFoodComponent },
+	{ path: "receive-food", component: ReceiveFoodComponent },
 ];

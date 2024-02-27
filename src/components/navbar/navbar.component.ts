@@ -14,15 +14,15 @@ export class NavbarComponent {
   navbarItems: any[] = [
     {
       label: 'Home',
-      routeTo: '/home'
+      routeTo: '/'
     },
     {
       label: 'Donate',
-      routeTo: '/donate'
+      routeTo: '/donate-food'
     },
     {
       label: 'Receive',
-      routeTo: '/receive'
+      routeTo: '/receive-food'
     },
     {
       label: 'About',
@@ -30,6 +30,6 @@ export class NavbarComponent {
     },
     {
       label: 'Contact Us',
-      routeTo: '/contact'
+      routeTo: '/contact-us'
     }];
 }
