@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from '../components/navbar/navbar.component';
 
 @Component({
@@ -8,9 +7,7 @@ import { NavbarComponent } from '../components/navbar/navbar.component';
   standalone: true,
   imports: [
     RouterOutlet,
-    NavbarComponent, 
-    FormsModule, 
-    RouterLink
+    NavbarComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

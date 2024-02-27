@@ -9,7 +9,7 @@
 
 	<div class="navbar-container__tab-group">
 		<ng-container *ngFor="let item of navbarItems">
-			<div class="navbar-container__tab-group-item" [routerLink]="[item.routeTo]" routerLinkActive="active-tab">{{ item.label }}</div>
+			<div class="navbar-container__tab-group-item" [routerLink]="[item.routeTo]" routerLinkActive="active-tab" [routerLinkActiveOptions]="{exact: true}"> {{ item.label }} </div>
 		</ng-container>
 		<div class="navbar-container__tab-group-happy-coin">
 			<img src="../../assets/images/navbar/happy-coin.png" alt="happy-coin-icon" class="navbar-container__tab-group-happy-coin-icon"/>
