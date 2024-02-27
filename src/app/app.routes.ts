@@ -1,6 +1,4 @@
-import { RouterModule, Routes } from "@angular/router";
-
-import { NgModule } from "@angular/core";
+import { Routes } from "@angular/router";
 import {
 	HomepageComponent,
 	DonateFoodComponent,
@@ -12,9 +10,3 @@ export const routes: Routes = [
 	{ path: "donate-food", component: DonateFoodComponent },
 	{ path: "receive-food", component: ReceiveFoodComponent },
 ];
-
-@NgModule({
-	imports: [RouterModule.forRoot(routes)],
-	exports: [RouterModule],
-})
-export class AppRoutingModule {}
