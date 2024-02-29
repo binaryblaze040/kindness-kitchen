@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { NavbarItem } from './models/navbar-model';
 
 @Component({
   selector: 'app-navbar',
@@ -11,7 +12,7 @@ import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/rou
 })
 export class NavbarComponent {
 
-  navbarItems: any[] = [
+  navbarItems: NavbarItem[] = [
     {
       label: 'Home',
       routeTo: '/'
